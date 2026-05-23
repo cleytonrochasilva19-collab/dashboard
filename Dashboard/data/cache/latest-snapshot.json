@@ -1,0 +1,229 @@
+{
+  "generatedAt": "2026-05-23T23:13:12.055Z",
+  "bitcoin": {
+    "status": "live",
+    "source": "CoinGecko",
+    "updatedAt": "2026-05-23T23:13:06.509Z",
+    "data": {
+      "priceUsd": 76649,
+      "change24hPct": 1.1803799420075707
+    }
+  },
+  "population": {
+    "status": "live",
+    "source": "World Bank annual indicators + interpolation",
+    "updatedAt": "2026-05-23T22:54:28.530Z",
+    "data": {
+      "populationNow": 8311780343,
+      "birthsToday": 346292,
+      "deathsToday": 160657,
+      "modelYear": 2024
+    }
+  },
+  "iss": {
+    "status": "placeholder",
+    "source": "Where The ISS At",
+    "updatedAt": null,
+    "note": "ISS feed unavailable: Error: Request failed with 400 for https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=14.825053831029&longitude=-1.9017484134161&localityLanguage=en",
+    "data": {
+      "latitude": null,
+      "longitude": null,
+      "velocityKmh": null,
+      "region": "Unavailable"
+    }
+  },
+  "trends": {
+    "status": "degraded",
+    "source": "Google Trends RSS (US)",
+    "updatedAt": "2026-05-23T22:54:29.869Z",
+    "note": "X trends require authenticated API access and remain a placeholder.",
+    "data": {
+      "google": [
+        {
+          "rank": 1,
+          "title": "cnn"
+        },
+        {
+          "rank": 2,
+          "title": "canadiens vs hurricanes"
+        },
+        {
+          "rank": 3,
+          "title": "abc news"
+        },
+        {
+          "rank": 4,
+          "title": "mark zuckerberg"
+        },
+        {
+          "rank": 5,
+          "title": "atlético nacional - tolima"
+        },
+        {
+          "rank": 6,
+          "title": "nebraska softball"
+        },
+        {
+          "rank": 7,
+          "title": "harry potter"
+        },
+        {
+          "rank": 8,
+          "title": "washington dc"
+        }
+      ],
+      "x": []
+    }
+  },
+  "weather": {
+    "status": "live",
+    "source": "Open-Meteo",
+    "updatedAt": "2026-05-23T23:04:36.973Z",
+    "data": [
+      {
+        "name": "Sao Paulo",
+        "timezone": "America/Sao_Paulo",
+        "temperatureC": 17.2,
+        "weatherCode": 63,
+        "localTimeIso": "2026-05-23T23:04:36.973Z"
+      },
+      {
+        "name": "Washington",
+        "timezone": "America/New_York",
+        "temperatureC": 12.1,
+        "weatherCode": 3,
+        "localTimeIso": "2026-05-23T23:04:36.972Z"
+      },
+      {
+        "name": "Tokyo",
+        "timezone": "Asia/Tokyo",
+        "temperatureC": 15.3,
+        "weatherCode": 3,
+        "localTimeIso": "2026-05-23T23:04:36.973Z"
+      },
+      {
+        "name": "Shanghai",
+        "timezone": "Asia/Shanghai",
+        "temperatureC": 23.1,
+        "weatherCode": 53,
+        "localTimeIso": "2026-05-23T23:04:36.961Z"
+      },
+      {
+        "name": "London",
+        "timezone": "Europe/London",
+        "temperatureC": 21.8,
+        "weatherCode": 0,
+        "localTimeIso": "2026-05-23T23:04:36.965Z"
+      },
+      {
+        "name": "Mumbai",
+        "timezone": "Asia/Kolkata",
+        "temperatureC": 30,
+        "weatherCode": 95,
+        "localTimeIso": "2026-05-23T23:04:36.965Z"
+      },
+      {
+        "name": "Paris",
+        "timezone": "Europe/Paris",
+        "temperatureC": 22.5,
+        "weatherCode": 0,
+        "localTimeIso": "2026-05-23T23:04:36.967Z"
+      }
+    ]
+  },
+  "flights": {
+    "status": "degraded",
+    "source": "OpenSky Network (public)",
+    "updatedAt": "2026-05-23T23:12:37.685Z",
+    "note": "Public OpenSky access is rate-limited. Add credentials for reliability.",
+    "data": {
+      "activeFlights": 7685
+    }
+  },
+  "countdown": {
+    "status": "live",
+    "source": "Static event schedule",
+    "updatedAt": "2026-05-23T22:54:28.237Z",
+    "data": {
+      "label": "FIFA World Cup 2026 Kickoff",
+      "targetIso": "2026-06-11T19:00:00Z"
+    }
+  },
+  "athletes": {
+    "status": "placeholder",
+    "source": "Manual override file",
+    "updatedAt": "2026-05-23T23:09:36.085Z",
+    "note": "Manual override until a sports data source is connected.",
+    "data": [
+      {
+        "id": "cr7",
+        "label": "CR7 Road to 1000 Goals",
+        "current": 965,
+        "target": 1000,
+        "accent": "#f5c542",
+        "meta": "Manual override until a sports data source is connected.",
+        "remaining": 35
+      },
+      {
+        "id": "messi",
+        "label": "Messi Road to 1000 Goals",
+        "current": 899,
+        "target": 1000,
+        "accent": "#4ea1ff",
+        "meta": "Manual override until a sports data source is connected.",
+        "remaining": 101
+      }
+    ]
+  },
+  "climate": {
+    "status": "degraded",
+    "source": "World Bank + manual override",
+    "updatedAt": "2026-05-23T22:54:28.741Z",
+    "note": "Renewable share is automatic. The warming metric remains a manual placeholder.",
+    "data": {
+      "renewableShare": {
+        "label": "Renewable Energy Share",
+        "value": 19.7355641050053,
+        "unit": "%",
+        "barPercent": 19.7355641050053,
+        "meta": "Latest published annual value from the World Bank."
+      },
+      "warming": {
+        "label": "Global Temperature Anomaly",
+        "value": 1.24,
+        "unit": "C",
+        "barPercent": 62,
+        "meta": "Placeholder until an automated climate anomaly source is connected."
+      }
+    }
+  },
+  "news": {
+    "status": "live",
+    "source": "Google News RSS",
+    "updatedAt": "2026-05-23T23:09:37.853Z",
+    "data": {
+      "headlines": [
+        "Trump says framework of Iran deal 'largely negotiated,' with provision to reopen strait - Reuters",
+        "France bans Israeli minister Itamar Ben-Gvir after ‘unspeakable’ flotilla detainee taunts - AP News",
+        "Deadliest China Coal Mine Blast Since 2009 Kills at Least 90 - Bloomberg.com",
+        "Tens of thousands rally in Serbia for antigovernment demonstrations - Al Jazeera",
+        "Israeli Strikes Pummel Lebanon, Killing Medics Amid Fragile Truce - The New York Times",
+        "Journalists run for cover as they report possible gunfire near White House - BBC",
+        "Exclusive: Trump says he's \"50/50\" on Iran deal, decision by Sunday - Axios",
+        "Thousands of Iranians Travel to Saudi Arabia in a Tense War-Time Pilgrimage - WSJ",
+        "Russia says 18 killed in strike on student dorm that it blamed on Ukraine - Reuters",
+        "WHO chief says Ebola outbreak in Congo is 'spreading rapidly' and upgrades risk assessment - Yahoo",
+        "Rubio's Stark Warnings To NATO On Russia, Troops, And Alliance Strains - Radio Free Europe/Radio Liberty",
+        "Pope Leo meets families of youth lost to illegal toxic waste dumping in Italy’s ‘Land of Fires’ - AP News",
+        "Spanish police beat and detain Gaza flotilla activists amid clashes at airport - The Times of Israel",
+        "Judge dismisses lawsuit brought by author Michael Wolff against Melania Trump - The Guardian",
+        "Zelensky warns of possible Russian Oreshnik missile attack on Ukraine - The Kyiv Independent",
+        "Despite ‘chaotic communication,’ Polish aide says Trump is committed to troops in Europe - politico.eu",
+        "China Eliminates Tariffs on Africa to Outmaneuver Trump - WSJ",
+        "18 People With Suspected Ebola Flee After Attackers Burn Down Congo Clinic - Forbes",
+        "A hardline general wanted by Interpol emerges as a key player in Iran war - CNN",
+        "Slovenia changes path as pro-Israel, Trump-admiring former PM Janez Jansa retakes helm - The Times of Israel"
+      ]
+    }
+  }
+}

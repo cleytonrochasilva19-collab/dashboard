@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0B0E14;
+  --color-darker: #05070A;
+  --color-panel: #151A22;
+  --color-accent: #3B82F6;
+  --color-neon: #00F0FF;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-slate-100 font-sans overflow-x-hidden antialiased;
+  }
+  
+  /* Scrollbar styling for ticker */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0E14;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
+
+/* Ticker Animation */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-ticker {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 240s linear infinite;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide {
+  animation: fadeSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slowFadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slow-staggered {
+  animation: slowFadeSlideIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient-x {
+  background-size: 200% auto;
+  animation: gradient-x 4s ease infinite;
+}

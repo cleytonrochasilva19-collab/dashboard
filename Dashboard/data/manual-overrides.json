@@ -1,0 +1,25 @@
+{
+  "athletes": [
+    {
+      "id": "cr7",
+      "label": "CR7 Road to 1000 Goals",
+      "current": 965,
+      "target": 1000,
+      "accent": "#f5c542",
+      "meta": "Manual override until a sports data source is connected."
+    },
+    {
+      "id": "messi",
+      "label": "Messi Road to 1000 Goals",
+      "current": 899,
+      "target": 1000,
+      "accent": "#4ea1ff",
+      "meta": "Manual override until a sports data source is connected."
+    }
+  ],
+  "climate": {
+    "warmingC": 1.24,
+    "warmingLabel": "Global Temperature Anomaly",
+    "warmingMeta": "Placeholder until an automated climate anomaly source is connected."
+  }
+}
